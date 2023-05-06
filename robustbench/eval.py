@@ -165,7 +165,7 @@ def corruptions_evaluation(batch_size: int, data_dir: str,
                 data_dir,
                 shuffle=False,
                 corruptions=[corruption],
-                prepr=prepr)
+                _=prepr)
 
             corruption_severity_accuracy = clean_accuracy(
                 model,
