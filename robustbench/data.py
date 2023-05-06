@@ -334,7 +334,7 @@ def load_corruptions_cifar(
     x_test_list, y_test_list = [], []
     n_pert = len(corruptions)
     for corruption in corruptions:
-        corruption_file_path = data_root_dir / (corruption + '.npy')
+        corruption_file_path = data_root_dir / corruption + '.npy'
         if not corruption_file_path.is_file():
             raise DownloadError(
                 f"{corruption} file is missing, try to re-download it.")
